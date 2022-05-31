@@ -23,7 +23,7 @@ The following steps can help setting up Easter2 fast:
  - sample training and testing notebooks are given in ```/notebooks``` directory
 
 ### Contributing
-This is a basic keras implementation of Easter2 model as per the paper. If there is an issue or feature request, feel free to open an issue. Additionally, a PR is always welcome.
+This is a basic keras implementation of Easter2.0 model as per the paper (paper link above). If there is an issue or feature request, feel free to open an issue. Additionally, a PR is always welcome.
 
 ## Citation
 If you find our work helpful, please cite the following:
