@@ -27,4 +27,11 @@ This is a basic keras implementation of Easter2.0 model as per the paper (paper 
 
 ## Citation
 If you find our work helpful, please cite the following:
-To be updated.
+```
+@article{chaudhary2022easter2,
+  title={Easter2. 0: Improving convolutional models for handwritten text recognition},
+  author={Chaudhary, Kartik and Bali, Raghav},
+  journal={arXiv preprint arXiv:2205.14879},
+  year={2022}
+}
+```
