@@ -6,6 +6,12 @@ from predict import load_easter_model
 import cv2
 import numpy as np
 import itertools
+import argparse 
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-p", "--path", help="A path of the image file")
+args = parser.parse_args()
 
 def preprocess(img):
             
@@ -54,17 +60,16 @@ class infer_img:
         return prediction[0]
 
 if __name__ == "__main__":
+    ## usage
+    ## python predict_line.py --path ~/garbage/images/test1.jpg
 
-    ## actually data_loader with data path is not needed; but in that case, charlist is needed to be extracted 
-    ## so training data is loaded
-
-    training_data = data_loader(config.DATA_PATH, config.BATCH_SIZE)
-    charlist = training_data.charList
+    with open("../data/charlist") as f:
+        charlist = [word.strip("\n") for word in f ]
 
     ## instead of loading the data path, you can write the charlist file in your local storage for the next time.
     infer_obj = infer_img(charlist)
 
-    print(infer_obj.predict("../data/lines/c04/c04-000/c04-000-00.png")) ## change the image path with the file path you want
+    print(infer_obj.predict(args.path)) ## change the image path with the file path you want
 
 ''' **Note**: this prediction is only good with line level images because this model has trained on IAM dataset 
 which contains only line level images. If you want to predict the real world images which contain multiple lines, 

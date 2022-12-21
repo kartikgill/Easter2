@@ -29,7 +29,7 @@ def load_easter_model(checkpoint_path):
         checkpoint = tensorflow.keras.models.load_model(
             checkpoint_path,
             custom_objects={'<lambda>': lambda x, y: y,
-            'tf':tf}
+            'tensorflow':tf, 'K':K}
         )
         
         EASTER = tensorflow.keras.models.Model(

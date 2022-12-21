@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+## weight file
+weights/saved_checkpoint.hdf5

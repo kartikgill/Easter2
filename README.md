@@ -22,6 +22,10 @@ The following steps can help setting up Easter2 fast:
  - run the ```train()``` function from ```/src/easter_model.py```
  - sample training and testing notebooks are given in ```/notebooks``` directory
 
+ ### How to predict for single line image?
+ - Go to the src folder.
+ - Run the ```python predict_line.py --path img_path``` 
+
 ### Contributing
 This is a basic keras implementation of Easter2.0 model as per the paper (paper link above). If there is an issue or feature request, feel free to open an issue. Additionally, a PR is always welcome.
 
