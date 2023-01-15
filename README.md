@@ -15,7 +15,7 @@ smaller, faster and efficient OCR/HTR solutions when available annotated data is
 
 ### How to use?
 The following steps can help setting up Easter2 fast:
- - Download checkpoint from release, and put it inside ```/weigths``` directory
+ - Download checkpoint from release, and put it inside ```/weigths``` directory. The download link is [here](https://github.com/kartikgill/Easter2/releases/download/IAM/saved_checkpoint.hdf5)
  - Download IAM dataset, and update data path in ```/src/config.py``` (sample notebook - ```/notebooks/iam_dataset_download.ipynb```)
  - install requirements as per the file ```requirements.txt```
  - Modify ```/src/config.py``` as per your needs
